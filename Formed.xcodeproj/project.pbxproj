@@ -1,0 +1,568 @@
+// !$*UTF8*$!
+{
+	archiveVersion = 1;
+	classes = {
+	};
+	objectVersion = 50;
+	objects = {
+
+/* Begin PBXBuildFile section */
+		28DBE8D0214CCBD800EB97DD /* FormedTests.m in Sources */ = {isa = PBXBuildFile; fileRef = 28DBE8CF214CCBD800EB97DD /* FormedTests.m */; };
+		28DBE8D2214CCBD800EB97DD /* Formed.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 28DE99AE2147CCAF00C6C9BD /* Formed.framework */; };
+		28DE99BF2147CCAF00C6C9BD /* Formed.h in Headers */ = {isa = PBXBuildFile; fileRef = 28DE99B12147CCAF00C6C9BD /* Formed.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		28DE99EE2147CD7700C6C9BD /* FormedTableViewController.h in Headers */ = {isa = PBXBuildFile; fileRef = 28DE99EC2147CD7700C6C9BD /* FormedTableViewController.h */; };
+		28DE99EF2147CD7700C6C9BD /* FormedTableViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 28DE99ED2147CD7700C6C9BD /* FormedTableViewController.m */; };
+		28DE99F22147CF6500C6C9BD /* Form.h in Headers */ = {isa = PBXBuildFile; fileRef = 28DE99F02147CF6500C6C9BD /* Form.h */; };
+		28DE99F32147CF6500C6C9BD /* Form.m in Sources */ = {isa = PBXBuildFile; fileRef = 28DE99F12147CF6500C6C9BD /* Form.m */; };
+		28DE99F62147CFDD00C6C9BD /* FormInput.h in Headers */ = {isa = PBXBuildFile; fileRef = 28DE99F42147CFDD00C6C9BD /* FormInput.h */; };
+		28DE99F72147CFDD00C6C9BD /* FormInput.m in Sources */ = {isa = PBXBuildFile; fileRef = 28DE99F52147CFDD00C6C9BD /* FormInput.m */; };
+		28DE99FA2147D05400C6C9BD /* FormSection.h in Headers */ = {isa = PBXBuildFile; fileRef = 28DE99F82147D05400C6C9BD /* FormSection.h */; };
+		28DE99FB2147D05400C6C9BD /* FormSection.m in Sources */ = {isa = PBXBuildFile; fileRef = 28DE99F92147D05400C6C9BD /* FormSection.m */; };
+		28DE99FE2147D09F00C6C9BD /* FormTextField.h in Headers */ = {isa = PBXBuildFile; fileRef = 28DE99FC2147D09F00C6C9BD /* FormTextField.h */; };
+		28DE99FF2147D09F00C6C9BD /* FormTextField.m in Sources */ = {isa = PBXBuildFile; fileRef = 28DE99FD2147D09F00C6C9BD /* FormTextField.m */; };
+		28DE9A032147D11A00C6C9BD /* FormStepper.h in Headers */ = {isa = PBXBuildFile; fileRef = 28DE9A012147D11A00C6C9BD /* FormStepper.h */; };
+		28DE9A042147D11A00C6C9BD /* FormStepper.m in Sources */ = {isa = PBXBuildFile; fileRef = 28DE9A022147D11A00C6C9BD /* FormStepper.m */; };
+		28EF3237214A77820089BB1C /* FormTextFieldCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = 28EF3236214A77820089BB1C /* FormTextFieldCell.xib */; };
+		28EF3245214A7A970089BB1C /* FormStepperCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = 28EF3244214A7A970089BB1C /* FormStepperCell.xib */; };
+		28EF324C214A7CAD0089BB1C /* FormTextFieldCell.m in Sources */ = {isa = PBXBuildFile; fileRef = 28EF3246214A7CAD0089BB1C /* FormTextFieldCell.m */; };
+		28EF324D214A7CAD0089BB1C /* FormStepperCell.m in Sources */ = {isa = PBXBuildFile; fileRef = 28EF3247214A7CAD0089BB1C /* FormStepperCell.m */; };
+		28EF324E214A7CAD0089BB1C /* UITextField+PaddedTextField.h in Headers */ = {isa = PBXBuildFile; fileRef = 28EF3248214A7CAD0089BB1C /* UITextField+PaddedTextField.h */; };
+		28EF324F214A7CAD0089BB1C /* UITextField+PaddedTextField.m in Sources */ = {isa = PBXBuildFile; fileRef = 28EF3249214A7CAD0089BB1C /* UITextField+PaddedTextField.m */; };
+		28EF3250214A7CAD0089BB1C /* FormTextFieldCell.h in Headers */ = {isa = PBXBuildFile; fileRef = 28EF324A214A7CAD0089BB1C /* FormTextFieldCell.h */; };
+		28EF3251214A7CAD0089BB1C /* FormStepperCell.h in Headers */ = {isa = PBXBuildFile; fileRef = 28EF324B214A7CAD0089BB1C /* FormStepperCell.h */; };
+/* End PBXBuildFile section */
+
+/* Begin PBXContainerItemProxy section */
+		28DBE8D3214CCBD800EB97DD /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = 28DE99A52147CCAF00C6C9BD /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = 28DE99AD2147CCAF00C6C9BD;
+			remoteInfo = Formed;
+		};
+/* End PBXContainerItemProxy section */
+
+/* Begin PBXFileReference section */
+		28DBE8CD214CCBD800EB97DD /* FormedTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = FormedTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
+		28DBE8CF214CCBD800EB97DD /* FormedTests.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = FormedTests.m; sourceTree = "<group>"; };
+		28DBE8D1214CCBD800EB97DD /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		28DE99AE2147CCAF00C6C9BD /* Formed.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Formed.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		28DE99B12147CCAF00C6C9BD /* Formed.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = Formed.h; sourceTree = "<group>"; };
+		28DE99B22147CCAF00C6C9BD /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		28DE99EC2147CD7700C6C9BD /* FormedTableViewController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = FormedTableViewController.h; sourceTree = "<group>"; };
+		28DE99ED2147CD7700C6C9BD /* FormedTableViewController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = FormedTableViewController.m; sourceTree = "<group>"; };
+		28DE99F02147CF6500C6C9BD /* Form.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = Form.h; sourceTree = "<group>"; };
+		28DE99F12147CF6500C6C9BD /* Form.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = Form.m; sourceTree = "<group>"; };
+		28DE99F42147CFDD00C6C9BD /* FormInput.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = FormInput.h; sourceTree = "<group>"; };
+		28DE99F52147CFDD00C6C9BD /* FormInput.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = FormInput.m; sourceTree = "<group>"; };
+		28DE99F82147D05400C6C9BD /* FormSection.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = FormSection.h; sourceTree = "<group>"; };
+		28DE99F92147D05400C6C9BD /* FormSection.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = FormSection.m; sourceTree = "<group>"; };
+		28DE99FC2147D09F00C6C9BD /* FormTextField.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = FormTextField.h; sourceTree = "<group>"; };
+		28DE99FD2147D09F00C6C9BD /* FormTextField.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = FormTextField.m; sourceTree = "<group>"; };
+		28DE9A012147D11A00C6C9BD /* FormStepper.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = FormStepper.h; sourceTree = "<group>"; };
+		28DE9A022147D11A00C6C9BD /* FormStepper.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = FormStepper.m; sourceTree = "<group>"; };
+		28EF3236214A77820089BB1C /* FormTextFieldCell.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = FormTextFieldCell.xib; sourceTree = "<group>"; };
+		28EF3244214A7A970089BB1C /* FormStepperCell.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = FormStepperCell.xib; sourceTree = "<group>"; };
+		28EF3246214A7CAD0089BB1C /* FormTextFieldCell.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = FormTextFieldCell.m; sourceTree = "<group>"; };
+		28EF3247214A7CAD0089BB1C /* FormStepperCell.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = FormStepperCell.m; sourceTree = "<group>"; };
+		28EF3248214A7CAD0089BB1C /* UITextField+PaddedTextField.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "UITextField+PaddedTextField.h"; sourceTree = "<group>"; };
+		28EF3249214A7CAD0089BB1C /* UITextField+PaddedTextField.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "UITextField+PaddedTextField.m"; sourceTree = "<group>"; };
+		28EF324A214A7CAD0089BB1C /* FormTextFieldCell.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = FormTextFieldCell.h; sourceTree = "<group>"; };
+		28EF324B214A7CAD0089BB1C /* FormStepperCell.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = FormStepperCell.h; sourceTree = "<group>"; };
+/* End PBXFileReference section */
+
+/* Begin PBXFrameworksBuildPhase section */
+		28DBE8CA214CCBD800EB97DD /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				28DBE8D2214CCBD800EB97DD /* Formed.framework in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		28DE99AA2147CCAF00C6C9BD /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXFrameworksBuildPhase section */
+
+/* Begin PBXGroup section */
+		28DBE8CE214CCBD800EB97DD /* FormedTests */ = {
+			isa = PBXGroup;
+			children = (
+				28DBE8CF214CCBD800EB97DD /* FormedTests.m */,
+				28DBE8D1214CCBD800EB97DD /* Info.plist */,
+			);
+			path = FormedTests;
+			sourceTree = "<group>";
+		};
+		28DBE8D8214CCF2100EB97DD /* Model */ = {
+			isa = PBXGroup;
+			children = (
+				28DE99F82147D05400C6C9BD /* FormSection.h */,
+				28DE99F92147D05400C6C9BD /* FormSection.m */,
+				28DE99F02147CF6500C6C9BD /* Form.h */,
+				28DE99F12147CF6500C6C9BD /* Form.m */,
+				28DE99F42147CFDD00C6C9BD /* FormInput.h */,
+				28DE99F52147CFDD00C6C9BD /* FormInput.m */,
+				28DE9A002147D0A800C6C9BD /* Input Types */,
+			);
+			path = Model;
+			sourceTree = "<group>";
+		};
+		28DBE8D9214CCF2D00EB97DD /* Controller */ = {
+			isa = PBXGroup;
+			children = (
+				28DE99EC2147CD7700C6C9BD /* FormedTableViewController.h */,
+				28DE99ED2147CD7700C6C9BD /* FormedTableViewController.m */,
+			);
+			path = Controller;
+			sourceTree = "<group>";
+		};
+		28DE99A42147CCAF00C6C9BD = {
+			isa = PBXGroup;
+			children = (
+				28DE99B02147CCAF00C6C9BD /* Formed */,
+				28DBE8CE214CCBD800EB97DD /* FormedTests */,
+				28DE99AF2147CCAF00C6C9BD /* Products */,
+			);
+			sourceTree = "<group>";
+		};
+		28DE99AF2147CCAF00C6C9BD /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				28DE99AE2147CCAF00C6C9BD /* Formed.framework */,
+				28DBE8CD214CCBD800EB97DD /* FormedTests.xctest */,
+			);
+			name = Products;
+			sourceTree = "<group>";
+		};
+		28DE99B02147CCAF00C6C9BD /* Formed */ = {
+			isa = PBXGroup;
+			children = (
+				28DE99B12147CCAF00C6C9BD /* Formed.h */,
+				28DBE8D9214CCF2D00EB97DD /* Controller */,
+				28DBE8D8214CCF2100EB97DD /* Model */,
+				28EF3235214A776A0089BB1C /* View */,
+				28DE99B22147CCAF00C6C9BD /* Info.plist */,
+			);
+			path = Formed;
+			sourceTree = "<group>";
+		};
+		28DE9A002147D0A800C6C9BD /* Input Types */ = {
+			isa = PBXGroup;
+			children = (
+				28DE99FC2147D09F00C6C9BD /* FormTextField.h */,
+				28DE99FD2147D09F00C6C9BD /* FormTextField.m */,
+				28DE9A012147D11A00C6C9BD /* FormStepper.h */,
+				28DE9A022147D11A00C6C9BD /* FormStepper.m */,
+			);
+			path = "Input Types";
+			sourceTree = "<group>";
+		};
+		28EF3235214A776A0089BB1C /* View */ = {
+			isa = PBXGroup;
+			children = (
+				28EF324B214A7CAD0089BB1C /* FormStepperCell.h */,
+				28EF3247214A7CAD0089BB1C /* FormStepperCell.m */,
+				28EF324A214A7CAD0089BB1C /* FormTextFieldCell.h */,
+				28EF3246214A7CAD0089BB1C /* FormTextFieldCell.m */,
+				28EF3248214A7CAD0089BB1C /* UITextField+PaddedTextField.h */,
+				28EF3249214A7CAD0089BB1C /* UITextField+PaddedTextField.m */,
+				28EF3244214A7A970089BB1C /* FormStepperCell.xib */,
+				28EF3236214A77820089BB1C /* FormTextFieldCell.xib */,
+			);
+			path = View;
+			sourceTree = "<group>";
+		};
+/* End PBXGroup section */
+
+/* Begin PBXHeadersBuildPhase section */
+		28DE99AB2147CCAF00C6C9BD /* Headers */ = {
+			isa = PBXHeadersBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				28EF3250214A7CAD0089BB1C /* FormTextFieldCell.h in Headers */,
+				28EF324E214A7CAD0089BB1C /* UITextField+PaddedTextField.h in Headers */,
+				28DE99EE2147CD7700C6C9BD /* FormedTableViewController.h in Headers */,
+				28DE99F62147CFDD00C6C9BD /* FormInput.h in Headers */,
+				28DE99BF2147CCAF00C6C9BD /* Formed.h in Headers */,
+				28DE99F22147CF6500C6C9BD /* Form.h in Headers */,
+				28DE9A032147D11A00C6C9BD /* FormStepper.h in Headers */,
+				28DE99FE2147D09F00C6C9BD /* FormTextField.h in Headers */,
+				28EF3251214A7CAD0089BB1C /* FormStepperCell.h in Headers */,
+				28DE99FA2147D05400C6C9BD /* FormSection.h in Headers */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXHeadersBuildPhase section */
+
+/* Begin PBXNativeTarget section */
+		28DBE8CC214CCBD800EB97DD /* FormedTests */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 28DBE8D5214CCBD800EB97DD /* Build configuration list for PBXNativeTarget "FormedTests" */;
+			buildPhases = (
+				28DBE8C9214CCBD800EB97DD /* Sources */,
+				28DBE8CA214CCBD800EB97DD /* Frameworks */,
+				28DBE8CB214CCBD800EB97DD /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				28DBE8D4214CCBD800EB97DD /* PBXTargetDependency */,
+			);
+			name = FormedTests;
+			productName = FormedTests;
+			productReference = 28DBE8CD214CCBD800EB97DD /* FormedTests.xctest */;
+			productType = "com.apple.product-type.bundle.unit-test";
+		};
+		28DE99AD2147CCAF00C6C9BD /* Formed */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 28DE99C22147CCAF00C6C9BD /* Build configuration list for PBXNativeTarget "Formed" */;
+			buildPhases = (
+				28DE99A92147CCAF00C6C9BD /* Sources */,
+				28DE99AA2147CCAF00C6C9BD /* Frameworks */,
+				28DE99AB2147CCAF00C6C9BD /* Headers */,
+				28DE99AC2147CCAF00C6C9BD /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = Formed;
+			productName = Formed;
+			productReference = 28DE99AE2147CCAF00C6C9BD /* Formed.framework */;
+			productType = "com.apple.product-type.framework";
+		};
+/* End PBXNativeTarget section */
+
+/* Begin PBXProject section */
+		28DE99A52147CCAF00C6C9BD /* Project object */ = {
+			isa = PBXProject;
+			attributes = {
+				LastSwiftUpdateCheck = 0940;
+				LastUpgradeCheck = 0940;
+				ORGANIZATIONNAME = "Shaun Anderson";
+				TargetAttributes = {
+					28DBE8CC214CCBD800EB97DD = {
+						CreatedOnToolsVersion = 9.4.1;
+					};
+					28DE99AD2147CCAF00C6C9BD = {
+						CreatedOnToolsVersion = 9.4.1;
+					};
+				};
+			};
+			buildConfigurationList = 28DE99A82147CCAF00C6C9BD /* Build configuration list for PBXProject "Formed" */;
+			compatibilityVersion = "Xcode 9.3";
+			developmentRegion = en;
+			hasScannedForEncodings = 0;
+			knownRegions = (
+				en,
+			);
+			mainGroup = 28DE99A42147CCAF00C6C9BD;
+			productRefGroup = 28DE99AF2147CCAF00C6C9BD /* Products */;
+			projectDirPath = "";
+			projectRoot = "";
+			targets = (
+				28DE99AD2147CCAF00C6C9BD /* Formed */,
+				28DBE8CC214CCBD800EB97DD /* FormedTests */,
+			);
+		};
+/* End PBXProject section */
+
+/* Begin PBXResourcesBuildPhase section */
+		28DBE8CB214CCBD800EB97DD /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		28DE99AC2147CCAF00C6C9BD /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				28EF3245214A7A970089BB1C /* FormStepperCell.xib in Resources */,
+				28EF3237214A77820089BB1C /* FormTextFieldCell.xib in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXResourcesBuildPhase section */
+
+/* Begin PBXSourcesBuildPhase section */
+		28DBE8C9214CCBD800EB97DD /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				28DBE8D0214CCBD800EB97DD /* FormedTests.m in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		28DE99A92147CCAF00C6C9BD /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				28DE99EF2147CD7700C6C9BD /* FormedTableViewController.m in Sources */,
+				28DE99FB2147D05400C6C9BD /* FormSection.m in Sources */,
+				28DE99FF2147D09F00C6C9BD /* FormTextField.m in Sources */,
+				28DE99F72147CFDD00C6C9BD /* FormInput.m in Sources */,
+				28DE99F32147CF6500C6C9BD /* Form.m in Sources */,
+				28EF324F214A7CAD0089BB1C /* UITextField+PaddedTextField.m in Sources */,
+				28DE9A042147D11A00C6C9BD /* FormStepper.m in Sources */,
+				28EF324C214A7CAD0089BB1C /* FormTextFieldCell.m in Sources */,
+				28EF324D214A7CAD0089BB1C /* FormStepperCell.m in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXSourcesBuildPhase section */
+
+/* Begin PBXTargetDependency section */
+		28DBE8D4214CCBD800EB97DD /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = 28DE99AD2147CCAF00C6C9BD /* Formed */;
+			targetProxy = 28DBE8D3214CCBD800EB97DD /* PBXContainerItemProxy */;
+		};
+/* End PBXTargetDependency section */
+
+/* Begin XCBuildConfiguration section */
+		28DBE8D6214CCBD800EB97DD /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				CODE_SIGN_STYLE = Automatic;
+				DEVELOPMENT_TEAM = X9T272DK2T;
+				INFOPLIST_FILE = FormedTests/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+					"@loader_path/Frameworks",
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = Ando.FormedTests;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				TARGETED_DEVICE_FAMILY = "1,2";
+			};
+			name = Debug;
+		};
+		28DBE8D7214CCBD800EB97DD /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				CODE_SIGN_STYLE = Automatic;
+				DEVELOPMENT_TEAM = X9T272DK2T;
+				INFOPLIST_FILE = FormedTests/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+					"@loader_path/Frameworks",
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = Ando.FormedTests;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				TARGETED_DEVICE_FAMILY = "1,2";
+			};
+			name = Release;
+		};
+		28DE99C02147CCAF00C6C9BD /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++14";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_ENABLE_OBJC_WEAK = YES;
+				CLANG_WARN_BLOCK_CAPTURE_AUTORELEASING = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_COMMA = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DEPRECATED_OBJC_IMPLEMENTATIONS = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
+				CLANG_WARN_OBJC_IMPLICIT_RETAIN_SELF = YES;
+				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
+				CLANG_WARN_STRICT_PROTOTYPES = YES;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNGUARDED_AVAILABILITY = YES_AGGRESSIVE;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				CODE_SIGN_IDENTITY = "iPhone Developer";
+				COPY_PHASE_STRIP = NO;
+				CURRENT_PROJECT_VERSION = 1;
+				DEBUG_INFORMATION_FORMAT = dwarf;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				ENABLE_TESTABILITY = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu11;
+				GCC_DYNAMIC_NO_PIC = NO;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"DEBUG=1",
+					"$(inherited)",
+				);
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 11.4;
+				MTL_ENABLE_DEBUG_INFO = YES;
+				ONLY_ACTIVE_ARCH = YES;
+				SDKROOT = iphoneos;
+				SWIFT_ACTIVE_COMPILATION_CONDITIONS = DEBUG;
+				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
+				VERSIONING_SYSTEM = "apple-generic";
+				VERSION_INFO_PREFIX = "";
+			};
+			name = Debug;
+		};
+		28DE99C12147CCAF00C6C9BD /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++14";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_ENABLE_OBJC_WEAK = YES;
+				CLANG_WARN_BLOCK_CAPTURE_AUTORELEASING = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_COMMA = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DEPRECATED_OBJC_IMPLEMENTATIONS = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
+				CLANG_WARN_OBJC_IMPLICIT_RETAIN_SELF = YES;
+				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
+				CLANG_WARN_STRICT_PROTOTYPES = YES;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNGUARDED_AVAILABILITY = YES_AGGRESSIVE;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				CODE_SIGN_IDENTITY = "iPhone Developer";
+				COPY_PHASE_STRIP = NO;
+				CURRENT_PROJECT_VERSION = 1;
+				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
+				ENABLE_NS_ASSERTIONS = NO;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu11;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 11.4;
+				MTL_ENABLE_DEBUG_INFO = NO;
+				SDKROOT = iphoneos;
+				SWIFT_COMPILATION_MODE = wholemodule;
+				SWIFT_OPTIMIZATION_LEVEL = "-O";
+				VALIDATE_PRODUCT = YES;
+				VERSIONING_SYSTEM = "apple-generic";
+				VERSION_INFO_PREFIX = "";
+			};
+			name = Release;
+		};
+		28DE99C32147CCAF00C6C9BD /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				CODE_SIGN_IDENTITY = "";
+				CODE_SIGN_STYLE = Automatic;
+				DEFINES_MODULE = YES;
+				DEVELOPMENT_TEAM = X9T272DK2T;
+				DYLIB_COMPATIBILITY_VERSION = 1;
+				DYLIB_CURRENT_VERSION = 1;
+				DYLIB_INSTALL_NAME_BASE = "@rpath";
+				INFOPLIST_FILE = Formed/Info.plist;
+				INSTALL_PATH = "$(LOCAL_LIBRARY_DIR)/Frameworks";
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+					"@loader_path/Frameworks",
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = Ando.Formed;
+				PRODUCT_NAME = "$(TARGET_NAME:c99extidentifier)";
+				SKIP_INSTALL = YES;
+				SWIFT_VERSION = 4.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+			};
+			name = Debug;
+		};
+		28DE99C42147CCAF00C6C9BD /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				CODE_SIGN_IDENTITY = "";
+				CODE_SIGN_STYLE = Automatic;
+				DEFINES_MODULE = YES;
+				DEVELOPMENT_TEAM = X9T272DK2T;
+				DYLIB_COMPATIBILITY_VERSION = 1;
+				DYLIB_CURRENT_VERSION = 1;
+				DYLIB_INSTALL_NAME_BASE = "@rpath";
+				INFOPLIST_FILE = Formed/Info.plist;
+				INSTALL_PATH = "$(LOCAL_LIBRARY_DIR)/Frameworks";
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+					"@loader_path/Frameworks",
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = Ando.Formed;
+				PRODUCT_NAME = "$(TARGET_NAME:c99extidentifier)";
+				SKIP_INSTALL = YES;
+				SWIFT_VERSION = 4.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+			};
+			name = Release;
+		};
+/* End XCBuildConfiguration section */
+
+/* Begin XCConfigurationList section */
+		28DBE8D5214CCBD800EB97DD /* Build configuration list for PBXNativeTarget "FormedTests" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				28DBE8D6214CCBD800EB97DD /* Debug */,
+				28DBE8D7214CCBD800EB97DD /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		28DE99A82147CCAF00C6C9BD /* Build configuration list for PBXProject "Formed" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				28DE99C02147CCAF00C6C9BD /* Debug */,
+				28DE99C12147CCAF00C6C9BD /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		28DE99C22147CCAF00C6C9BD /* Build configuration list for PBXNativeTarget "Formed" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				28DE99C32147CCAF00C6C9BD /* Debug */,
+				28DE99C42147CCAF00C6C9BD /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+/* End XCConfigurationList section */
+	};
+	rootObject = 28DE99A52147CCAF00C6C9BD /* Project object */;
+}
