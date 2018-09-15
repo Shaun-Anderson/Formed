@@ -7,6 +7,7 @@
 //
 
 #import <XCTest/XCTest.h>
+#import "Form.h"
 
 @interface FormedTests : XCTestCase
 
@@ -34,6 +35,36 @@
     [self measureBlock:^{
         // Put the code you want to measure the time of here.
     }];
+}
+
+-(void)testAddSection {
+    Form *form = [[Form alloc] init];
+    [form addSection:@"New Section"];
+    XCTAssertEqualObjects(form.sections[0].sectionName, @"New Section");
+}
+
+-(void)testAddTextField {
+    
+}
+
+-(void)testAddStepper {
+    
+}
+
+-(void)testAddSwitch {
+    // Check if adding works in on and off mode.
+    Form *form = [[Form alloc] init];
+    [form addSection:@"New Section"];
+    [form addSwitch:@"Switch"];
+    XCTAssertEqualObjects(form.sections[0].inputs[0].inputName, @"Switch");
+}
+
+-(void)testGetValue {
+    Form *form = [[Form alloc] init];
+    [form addSection:@"New Section"];
+    [form addStepper:@"Stepper"];
+    NSString *value = [form getValue:@"Stepper"];
+    XCTAssertEqualObjects(value, @"0");
 }
 
 @end
