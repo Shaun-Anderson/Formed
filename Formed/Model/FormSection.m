@@ -9,6 +9,7 @@
 #import "FormSection.h"
 #import "Input Types/FormTextField.h"
 #import "Input Types/FormStepper.h"
+#import "Input Types/FormSwitch.h"
 
 @implementation FormSection
 
@@ -33,4 +34,11 @@
     [_inputs addObject:newStepper];
 }
 
+- (void)addStepper:(NSString*)name isOn:(Boolean)isOn {
+    FormSwitch *newSwitch = [[FormSwitch alloc] init];
+    newSwitch.inputName = name;
+    newSwitch.typeFlag = Switch;
+    newSwitch.isOn = &(isOn);
+    [_inputs addObject:newSwitch];
+}
 @end
