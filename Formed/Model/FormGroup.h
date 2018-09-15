@@ -7,7 +7,8 @@
 //
 
 #import <Foundation/Foundation.h>
+#import "FormInput.h"
 
 @interface FormGroup : NSObject
-
+@property NSMutableArray<FormInput *> *inputs;
 @end
