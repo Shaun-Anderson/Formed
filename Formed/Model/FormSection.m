@@ -34,7 +34,7 @@
     [_inputs addObject:newStepper];
 }
 
-- (void)addStepper:(NSString*)name isOn:(Boolean)isOn {
+- (void)addSwitch:(NSString*)name isOn:(Boolean)isOn {
     FormSwitch *newSwitch = [[FormSwitch alloc] init];
     newSwitch.inputName = name;
     newSwitch.typeFlag = Switch;

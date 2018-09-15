@@ -14,4 +14,7 @@
 - (void)addSection:(NSString*)sectionName;
 - (void)addTextField:(NSString*)name;
 - (void)addStepper:(NSString *)name;
+- (void)addSwitch:(NSString *)name;
+- (NSString*)getValue:(NSString *)inputFieldName;
+
 @end

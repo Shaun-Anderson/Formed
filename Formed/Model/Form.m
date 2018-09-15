@@ -9,6 +9,7 @@
 #import "Form.h"
 #import "Input Types/FormTextField.h"
 #import "Input Types/FormStepper.h"
+#import "Input Types/FormSwitch.h"
 
 @implementation Form
 - (instancetype)init {
@@ -62,6 +63,11 @@
 - (void)addStepper:(NSString *)name {
     FormSection *section = [_sections objectAtIndex:_sections.count-1];
     [section addStepper:name];
+}
+
+-(void)addSwitch:(NSString *)name {
+    FormSection *section = [_sections objectAtIndex:_sections.count-1];
+    [section addSwitch:name isOn:false];
 }
 
 @end

@@ -14,4 +14,5 @@
 @property NSMutableArray<FormInput *> *inputs;
 - (void)addTextField:(NSString*)name;
 - (void)addStepper:(NSString *)name;
+- (void)addSwitch:(NSString*)name isOn:(Boolean)isOn;
 @end
