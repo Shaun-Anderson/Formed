@@ -135,6 +135,7 @@
 		28DBE8E7214CDD2800EB97DD /* TableCells */ = {
 			isa = PBXGroup;
 			children = (
+				28DBE8F0214CE4F300EB97DD /* TextFieldCell */,
 				28DBE8ED214CDFF400EB97DD /* StepperCell */,
 				28DBE8E8214CDD3800EB97DD /* SwitchCell */,
 			);
@@ -168,6 +169,16 @@
 				28EF3249214A7CAD0089BB1C /* UITextField+PaddedTextField.m */,
 			);
 			path = Extensions;
+			sourceTree = "<group>";
+		};
+		28DBE8F0214CE4F300EB97DD /* TextFieldCell */ = {
+			isa = PBXGroup;
+			children = (
+				28EF3236214A77820089BB1C /* FormTextFieldCell.xib */,
+				28EF324A214A7CAD0089BB1C /* FormTextFieldCell.h */,
+				28EF3246214A7CAD0089BB1C /* FormTextFieldCell.m */,
+			);
+			path = TextFieldCell;
 			sourceTree = "<group>";
 		};
 		28DE99A42147CCAF00C6C9BD = {
@@ -218,9 +229,6 @@
 			children = (
 				28DBE8EE214CE00700EB97DD /* Extensions */,
 				28DBE8E7214CDD2800EB97DD /* TableCells */,
-				28EF324A214A7CAD0089BB1C /* FormTextFieldCell.h */,
-				28EF3246214A7CAD0089BB1C /* FormTextFieldCell.m */,
-				28EF3236214A77820089BB1C /* FormTextFieldCell.xib */,
 			);
 			path = View;
 			sourceTree = "<group>";
