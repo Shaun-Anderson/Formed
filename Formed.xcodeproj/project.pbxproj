@@ -14,6 +14,13 @@
 		28DBE8E6214CDCE400EB97DD /* FormSwitchCell.m in Sources */ = {isa = PBXBuildFile; fileRef = 28DBE8E4214CDCE400EB97DD /* FormSwitchCell.m */; };
 		28DBE8EB214CDFA800EB97DD /* FormSwitch.h in Headers */ = {isa = PBXBuildFile; fileRef = 28DBE8E9214CDFA800EB97DD /* FormSwitch.h */; };
 		28DBE8EC214CDFA800EB97DD /* FormSwitch.m in Sources */ = {isa = PBXBuildFile; fileRef = 28DBE8EA214CDFA800EB97DD /* FormSwitch.m */; };
+		28DBE8F2214CE7F800EB97DD /* FormSegmentedControlCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = 28DBE8F1214CE7F800EB97DD /* FormSegmentedControlCell.xib */; };
+		28DBE8F6214CEBB600EB97DD /* FormSegmentedControlCell.h in Headers */ = {isa = PBXBuildFile; fileRef = 28DBE8F4214CEBB600EB97DD /* FormSegmentedControlCell.h */; };
+		28DBE8F7214CEBB600EB97DD /* FormSegmentedControlCell.m in Sources */ = {isa = PBXBuildFile; fileRef = 28DBE8F5214CEBB600EB97DD /* FormSegmentedControlCell.m */; };
+		28DBE8FA214CED1A00EB97DD /* FormSegmentedControl.h in Headers */ = {isa = PBXBuildFile; fileRef = 28DBE8F8214CED1A00EB97DD /* FormSegmentedControl.h */; };
+		28DBE8FB214CED1A00EB97DD /* FormSegmentedControl.m in Sources */ = {isa = PBXBuildFile; fileRef = 28DBE8F9214CED1A00EB97DD /* FormSegmentedControl.m */; };
+		28DBE8FE214CEDC800EB97DD /* FormGroup.h in Headers */ = {isa = PBXBuildFile; fileRef = 28DBE8FC214CEDC800EB97DD /* FormGroup.h */; };
+		28DBE8FF214CEDC800EB97DD /* FormGroup.m in Sources */ = {isa = PBXBuildFile; fileRef = 28DBE8FD214CEDC800EB97DD /* FormGroup.m */; };
 		28DE99BF2147CCAF00C6C9BD /* Formed.h in Headers */ = {isa = PBXBuildFile; fileRef = 28DE99B12147CCAF00C6C9BD /* Formed.h */; settings = {ATTRIBUTES = (Public, ); }; };
 		28DE99EE2147CD7700C6C9BD /* FormedTableViewController.h in Headers */ = {isa = PBXBuildFile; fileRef = 28DE99EC2147CD7700C6C9BD /* FormedTableViewController.h */; };
 		28DE99EF2147CD7700C6C9BD /* FormedTableViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 28DE99ED2147CD7700C6C9BD /* FormedTableViewController.m */; };
@@ -56,6 +63,13 @@
 		28DBE8E4214CDCE400EB97DD /* FormSwitchCell.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = FormSwitchCell.m; sourceTree = "<group>"; };
 		28DBE8E9214CDFA800EB97DD /* FormSwitch.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = FormSwitch.h; sourceTree = "<group>"; };
 		28DBE8EA214CDFA800EB97DD /* FormSwitch.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = FormSwitch.m; sourceTree = "<group>"; };
+		28DBE8F1214CE7F800EB97DD /* FormSegmentedControlCell.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = FormSegmentedControlCell.xib; sourceTree = "<group>"; };
+		28DBE8F4214CEBB600EB97DD /* FormSegmentedControlCell.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = FormSegmentedControlCell.h; sourceTree = "<group>"; };
+		28DBE8F5214CEBB600EB97DD /* FormSegmentedControlCell.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = FormSegmentedControlCell.m; sourceTree = "<group>"; };
+		28DBE8F8214CED1A00EB97DD /* FormSegmentedControl.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = FormSegmentedControl.h; sourceTree = "<group>"; };
+		28DBE8F9214CED1A00EB97DD /* FormSegmentedControl.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = FormSegmentedControl.m; sourceTree = "<group>"; };
+		28DBE8FC214CEDC800EB97DD /* FormGroup.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = FormGroup.h; sourceTree = "<group>"; };
+		28DBE8FD214CEDC800EB97DD /* FormGroup.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = FormGroup.m; sourceTree = "<group>"; };
 		28DE99AE2147CCAF00C6C9BD /* Formed.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Formed.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		28DE99B12147CCAF00C6C9BD /* Formed.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = Formed.h; sourceTree = "<group>"; };
 		28DE99B22147CCAF00C6C9BD /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
@@ -119,6 +133,8 @@
 				28DE99F42147CFDD00C6C9BD /* FormInput.h */,
 				28DE99F52147CFDD00C6C9BD /* FormInput.m */,
 				28DE9A002147D0A800C6C9BD /* Input Types */,
+				28DBE8FC214CEDC800EB97DD /* FormGroup.h */,
+				28DBE8FD214CEDC800EB97DD /* FormGroup.m */,
 			);
 			path = Model;
 			sourceTree = "<group>";
@@ -135,6 +151,7 @@
 		28DBE8E7214CDD2800EB97DD /* TableCells */ = {
 			isa = PBXGroup;
 			children = (
+				28DBE8F3214CEB7E00EB97DD /* SegmentedControlCell */,
 				28DBE8F0214CE4F300EB97DD /* TextFieldCell */,
 				28DBE8ED214CDFF400EB97DD /* StepperCell */,
 				28DBE8E8214CDD3800EB97DD /* SwitchCell */,
@@ -181,6 +198,16 @@
 			path = TextFieldCell;
 			sourceTree = "<group>";
 		};
+		28DBE8F3214CEB7E00EB97DD /* SegmentedControlCell */ = {
+			isa = PBXGroup;
+			children = (
+				28DBE8F1214CE7F800EB97DD /* FormSegmentedControlCell.xib */,
+				28DBE8F4214CEBB600EB97DD /* FormSegmentedControlCell.h */,
+				28DBE8F5214CEBB600EB97DD /* FormSegmentedControlCell.m */,
+			);
+			path = SegmentedControlCell;
+			sourceTree = "<group>";
+		};
 		28DE99A42147CCAF00C6C9BD = {
 			isa = PBXGroup;
 			children = (
@@ -220,6 +247,8 @@
 				28DE9A022147D11A00C6C9BD /* FormStepper.m */,
 				28DBE8E9214CDFA800EB97DD /* FormSwitch.h */,
 				28DBE8EA214CDFA800EB97DD /* FormSwitch.m */,
+				28DBE8F8214CED1A00EB97DD /* FormSegmentedControl.h */,
+				28DBE8F9214CED1A00EB97DD /* FormSegmentedControl.m */,
 			);
 			path = "Input Types";
 			sourceTree = "<group>";
@@ -241,6 +270,7 @@
 			buildActionMask = 2147483647;
 			files = (
 				28DBE8EB214CDFA800EB97DD /* FormSwitch.h in Headers */,
+				28DBE8F6214CEBB600EB97DD /* FormSegmentedControlCell.h in Headers */,
 				28EF3250214A7CAD0089BB1C /* FormTextFieldCell.h in Headers */,
 				28EF324E214A7CAD0089BB1C /* UITextField+PaddedTextField.h in Headers */,
 				28DE99EE2147CD7700C6C9BD /* FormedTableViewController.h in Headers */,
@@ -252,6 +282,8 @@
 				28DE99FE2147D09F00C6C9BD /* FormTextField.h in Headers */,
 				28EF3251214A7CAD0089BB1C /* FormStepperCell.h in Headers */,
 				28DE99FA2147D05400C6C9BD /* FormSection.h in Headers */,
+				28DBE8FE214CEDC800EB97DD /* FormGroup.h in Headers */,
+				28DBE8FA214CED1A00EB97DD /* FormSegmentedControl.h in Headers */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -344,6 +376,7 @@
 			files = (
 				28EF3245214A7A970089BB1C /* FormStepperCell.xib in Resources */,
 				28DBE8DB214CDACA00EB97DD /* FormSwitchCell.xib in Resources */,
+				28DBE8F2214CE7F800EB97DD /* FormSegmentedControlCell.xib in Resources */,
 				28EF3237214A77820089BB1C /* FormTextFieldCell.xib in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -368,9 +401,12 @@
 				28DE99FF2147D09F00C6C9BD /* FormTextField.m in Sources */,
 				28DBE8E6214CDCE400EB97DD /* FormSwitchCell.m in Sources */,
 				28DE99F72147CFDD00C6C9BD /* FormInput.m in Sources */,
+				28DBE8FF214CEDC800EB97DD /* FormGroup.m in Sources */,
 				28DBE8EC214CDFA800EB97DD /* FormSwitch.m in Sources */,
+				28DBE8F7214CEBB600EB97DD /* FormSegmentedControlCell.m in Sources */,
 				28DE99F32147CF6500C6C9BD /* Form.m in Sources */,
 				28EF324F214A7CAD0089BB1C /* UITextField+PaddedTextField.m in Sources */,
+				28DBE8FB214CED1A00EB97DD /* FormSegmentedControl.m in Sources */,
 				28DE9A042147D11A00C6C9BD /* FormStepper.m in Sources */,
 				28EF324C214A7CAD0089BB1C /* FormTextFieldCell.m in Sources */,
 				28EF324D214A7CAD0089BB1C /* FormStepperCell.m in Sources */,
