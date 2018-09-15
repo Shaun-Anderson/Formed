@@ -8,6 +8,14 @@
 
 #import <UIKit/UIKit.h>
 
-@interface FormSegmentedControlCell : UITableViewCell
+@protocol FormSegmentDelegate
+@required
+- (void)segmentChanged:(NSString*)sectionName;
+@optional
+// list of optional methods
+@end
 
+@interface FormSegmentedControlCell : UITableViewCell
+@property (weak, nonatomic) IBOutlet UISegmentedControl *segmentedControl;
+@property (weak) id <FormSegmentDelegate> delegate;
 @end
