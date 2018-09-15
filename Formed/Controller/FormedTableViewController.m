@@ -75,4 +75,8 @@
 }
 
 
+- (void)segmentChanged:(NSString *)sectionName {
+    NSLog(@"SegmentChanged");
+}
+
 @end

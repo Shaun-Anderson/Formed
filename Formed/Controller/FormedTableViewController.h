@@ -10,8 +10,9 @@
 #import "Form.h"
 #import "FormStepperCell.h"
 #import "FormTextFieldCell.h"
+#import "FormSegmentedControlCell.h"
 
-@interface FormedTableViewController : UIViewController<UITableViewDataSource, UITableViewDelegate>
+@interface FormedTableViewController : UIViewController<UITableViewDataSource, UITableViewDelegate, FormSegmentDelegate>
 @property Form* form;
 @property UITableView* tableView;
 @end
