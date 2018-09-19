@@ -11,7 +11,7 @@
 
 @protocol FormSegmentDelegate
 @required
-- (void)segmentChanged:(NSString*)sectionName;
+- (void)segmentChanged:(long*)segmentFormID selectedIndex:(NSInteger*)selectedIndex;
 @optional
 // list of optional methods
 @end
@@ -19,6 +19,6 @@
 @interface FormSegmentedControlCell : UITableViewCell
 @property (weak, nonatomic) IBOutlet FormedUISegmentControl *segmentedControl;
 @property (weak) id <FormSegmentDelegate> delegate;
-@property int formID;
+@property NSInteger formID;
 - (void)setSegments:(NSArray *)segments;
 @end

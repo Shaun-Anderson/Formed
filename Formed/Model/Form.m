@@ -74,6 +74,7 @@
 -(FormSegmentedControl *)addSegmentedControl {
     FormSegmentedControl *newSegmentedControl = [[FormSegmentedControl alloc] init];
     newSegmentedControl.typeFlag = SegmentedControl;
+    newSegmentedControl.selectedSegment = 0;
     [_sections addObject:newSegmentedControl];
     return newSegmentedControl;
 }

@@ -11,6 +11,14 @@
 
 @implementation FormSegmentedControlCell
 
+- (instancetype)init
+{
+    self = [super init];
+    if (self) {
+        self.formID = 0;
+    }
+    return self;
+}
 - (void)awakeFromNib {
     [super awakeFromNib];
     // Initialization code
@@ -21,9 +29,11 @@
 
     // Configure the view for the selected state
 }
-- (IBAction)segmentControlChanged:(UISegmentedControl *)sender {
-    NSLog(@"%ld", (long)sender.selectedSegmentIndex);
-    [_delegate segmentChanged:@"hi"];
+- (IBAction)segmentControlChanged:(FormedUISegmentControl *)sender {
+    NSLog(@"%ld", (long)sender.formID);
+    
+    
+    [_delegate segmentChanged:(long *)sender.formID selectedIndex:sender.selectedSegmentIndex];
 }
 
 - (void)setSegments:(NSArray *)segments

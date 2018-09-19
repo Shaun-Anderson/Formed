@@ -65,8 +65,9 @@ NSMutableArray<FormInput *> *activeElements;
             FormSegmentedControl *segmentData = (FormSegmentedControl *) activeElements[indexPath.row];
             [cell setSegments:segmentData.segmentGroups];
             cell.delegate = self;
-            cell.segmentedControl.formID = indexPath.row;
-            cell.segmentedControl.selectedSegmentIndex = *(segmentData.selectedSegment);
+            segmentData.selectedSegment = 1;
+            NSInteger newInt = 1;
+            cell.segmentedControl.selectedSegmentIndex = segmentData.selectedSegment;
             return cell;
         }
             
@@ -108,9 +109,10 @@ NSMutableArray<FormInput *> *activeElements;
     return 1;
 }
 
-
-- (void)segmentChanged:(NSString *)sectionName {
+- (void)segmentChanged:(NSInteger *)segmentFormID selectedIndex:(NSInteger *)selectedIndex {
     NSLog(@"This segmment has been changed.");
+    FormSegmentedControl *segmentedControl = (FormSegmentedControl *) _form.sections[(long)segmentFormID];
+    segmentedControl.selectedSegment = selectedIndex;
     [self refresh];
 }
 

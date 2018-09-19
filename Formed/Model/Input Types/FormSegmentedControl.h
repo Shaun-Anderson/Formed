@@ -12,7 +12,7 @@
 // Methods
 @property NSInteger *numOfSegments;
 @property NSMutableArray<FormGroup *> *segmentGroups;
-@property NSInteger *selectedSegment;
+@property NSInteger selectedSegment;
 // Properties
 - (void)addSegment:(NSString*)name;
 - (void)addTextField:(NSString *)name;

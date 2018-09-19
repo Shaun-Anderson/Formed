@@ -11,7 +11,7 @@
 NS_ASSUME_NONNULL_BEGIN
 
 @interface FormedUISegmentControl : UISegmentedControl
-@property int formID;
+@property (nonatomic, assign) NSInteger formID;
 @end
 
 NS_ASSUME_NONNULL_END
