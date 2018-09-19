@@ -15,4 +15,6 @@
 @interface FormedTableViewController : UIViewController<UITableViewDataSource, UITableViewDelegate, FormSegmentDelegate>
 @property Form* form;
 @property UITableView* tableView;
+- (void)getActiveElements;
+- (void)refresh;
 @end

@@ -16,6 +16,8 @@
 @end
 
 @interface FormSegmentedControlCell : UITableViewCell
-@property (weak, nonatomic) IBOutlet UISegmentedControl *segmentedControl;
+@property (weak, nonatomic) IBOutlet FormedSegmentedControl *segmentedControl;
 @property (weak) id <FormSegmentDelegate> delegate;
+@property int formID;
+- (void)setSegments:(NSArray *)segments;
 @end

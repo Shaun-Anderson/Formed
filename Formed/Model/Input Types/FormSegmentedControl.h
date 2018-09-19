@@ -6,8 +6,14 @@
 //  Copyright © 2018 Shaun Anderson. All rights reserved.
 //
 
-#import "FormInput.h"
+#import "FormGroup.h"
 
 @interface FormSegmentedControl : FormInput
-
+// Methods
+@property NSInteger *numOfSegments;
+@property NSMutableArray<FormGroup *> *segmentGroups;
+@property NSInteger *selectedSegment;
+// Properties
+- (void)addSegment:(NSString*)name;
+- (void)addTextField:(NSString *)name;
 @end

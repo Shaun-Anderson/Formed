@@ -10,5 +10,11 @@
 #import "FormInput.h"
 
 @interface FormGroup : NSObject
+// Properties
+@property NSString *groupName;
 @property NSMutableArray<FormInput *> *inputs;
+// Methods
+- (void)addTextField:(NSString*)name;
+- (void)addStepper:(NSString *)name;
+- (void)addSwitch:(NSString*)name isOn:(Boolean)isOn;
 @end

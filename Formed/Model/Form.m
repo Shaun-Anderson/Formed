@@ -10,6 +10,7 @@
 #import "Input Types/FormTextField.h"
 #import "Input Types/FormStepper.h"
 #import "Input Types/FormSwitch.h"
+#import "Input Types/FormSegmentedControl.h"
 
 @implementation Form
 - (instancetype)init {
@@ -24,30 +25,30 @@
     _sections = nil;
 }
 
--(NSString*)getValue:(NSString *)inputFieldName {
-    NSString *returnValue = nil;
-    for (int i = 0; i < _sections.count; i++) {
-        for (int j = 0; j < _sections[i].inputs.count; j++) {
-            if (_sections[i].inputs[j].inputName == inputFieldName) {
-                switch (_sections[i].inputs[j].typeFlag) {
-                    case Text:
-                    {
-                        FormTextField *newText = (FormTextField *) _sections[i].inputs[j];
-                        return newText.input;
-                    }
-                    case Stepper:
-                    {
-                        FormStepper *thisStepper = (FormStepper *) _sections[i].inputs[j];
-                        return @((long)thisStepper.amount).stringValue;
-                    }
-                    default:
-                        break;
-                }
-            }
-        }
-    }
-    return returnValue;
-}
+//-(NSString*)getValue:(NSString *)inputFieldName {
+//    NSString *returnValue = nil;
+//    for (int i = 0; i < _sections.count; i++) {
+//        for (int j = 0; j < _sections[i].inputs.count; j++) {
+//            if (_sections[i].inputs[j].inputName == inputFieldName) {
+//                switch (_sections[i].inputs[j].typeFlag) {
+//                    case Text:
+//                    {
+//                        FormTextField *newText = (FormTextField *) _sections[i].inputs[j];
+//                        return newText.input;
+//                    }
+//                    case Stepper:
+//                    {
+//                        FormStepper *thisStepper = (FormStepper *) _sections[i].inputs[j];
+//                        return @((long)thisStepper.amount).stringValue;
+//                    }
+//                    default:
+//                        break;
+//                }
+//            }
+//        }
+//    }
+//    return returnValue;
+//}
 
 -(void)addSection:(NSString *)sectionName {
     FormSection *newSection = [[FormSection alloc] init];
@@ -68,6 +69,13 @@
 -(void)addSwitch:(NSString *)name {
     FormSection *section = [_sections objectAtIndex:_sections.count-1];
     [section addSwitch:name isOn:false];
+}
+
+-(FormSegmentedControl *)addSegmentedControl {
+    FormSegmentedControl *newSegmentedControl = [[FormSegmentedControl alloc] init];
+    newSegmentedControl.typeFlag = SegmentedControl;
+    [_sections addObject:newSegmentedControl];
+    return newSegmentedControl;
 }
 
 @end

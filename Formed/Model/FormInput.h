@@ -12,7 +12,8 @@ typedef enum {
     Text,
     Image,
     Stepper,
-    Switch
+    Switch,
+    SegmentedControl
 } InputTypeFlag;
 
 @interface FormInput : NSObject

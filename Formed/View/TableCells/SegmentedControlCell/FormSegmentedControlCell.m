@@ -7,6 +7,7 @@
 //
 
 #import "FormSegmentedControlCell.h"
+#import "FormGroup.h"
 
 @implementation FormSegmentedControlCell
 
@@ -20,7 +21,18 @@
 
     // Configure the view for the selected state
 }
-- (IBAction)segmentControlChanged:(id)sender {
+- (IBAction)segmentControlChanged:(UISegmentedControl *)sender {
+    NSLog(@"%ld", (long)sender.selectedSegmentIndex);
+    [_delegate segmentChanged:@"hi"];
+}
+
+- (void)setSegments:(NSArray *)segments
+{
+    [_segmentedControl removeAllSegments];
+    
+    for (FormGroup *segment in segments) {
+        [_segmentedControl insertSegmentWithTitle:segment.groupName atIndex:_segmentedControl.numberOfSegments animated:NO];
+    }
 }
 
 @end
