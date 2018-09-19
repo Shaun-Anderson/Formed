@@ -1,14 +1,14 @@
 //
-//  Form+UISegmentedControl.m
+//  FormedUISegmentControl.m
 //  Formed
 //
 //  Created by Shaun Anderson on 19/9/18.
+//  Copyright © 2018 Shaun Anderson. All rights reserved.
 //
 
-#import "FormedSegmentedControl.h"
+#import "FormedUISegmentControl.h"
 
-@implementation FormedSegmentedControl
-
+@implementation FormedUISegmentControl
 
 /*
 // Only override drawRect: if you perform custom drawing.

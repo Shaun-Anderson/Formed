@@ -7,6 +7,8 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		286BCE652152598D00B71C4C /* FormedUISegmentControl.h in Headers */ = {isa = PBXBuildFile; fileRef = 286BCE632152598D00B71C4C /* FormedUISegmentControl.h */; };
+		286BCE662152598D00B71C4C /* FormedUISegmentControl.m in Sources */ = {isa = PBXBuildFile; fileRef = 286BCE642152598D00B71C4C /* FormedUISegmentControl.m */; };
 		28DBE8D0214CCBD800EB97DD /* FormedTests.m in Sources */ = {isa = PBXBuildFile; fileRef = 28DBE8CF214CCBD800EB97DD /* FormedTests.m */; };
 		28DBE8D2214CCBD800EB97DD /* Formed.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 28DE99AE2147CCAF00C6C9BD /* Formed.framework */; };
 		28DBE8DB214CDACA00EB97DD /* FormSwitchCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = 28DBE8DA214CDACA00EB97DD /* FormSwitchCell.xib */; };
@@ -55,6 +57,8 @@
 /* End PBXContainerItemProxy section */
 
 /* Begin PBXFileReference section */
+		286BCE632152598D00B71C4C /* FormedUISegmentControl.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = FormedUISegmentControl.h; sourceTree = "<group>"; };
+		286BCE642152598D00B71C4C /* FormedUISegmentControl.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = FormedUISegmentControl.m; sourceTree = "<group>"; };
 		28DBE8CD214CCBD800EB97DD /* FormedTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = FormedTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		28DBE8CF214CCBD800EB97DD /* FormedTests.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = FormedTests.m; sourceTree = "<group>"; };
 		28DBE8D1214CCBD800EB97DD /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
@@ -114,6 +118,15 @@
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
+		286BCE622152597A00B71C4C /* UIControls */ = {
+			isa = PBXGroup;
+			children = (
+				286BCE632152598D00B71C4C /* FormedUISegmentControl.h */,
+				286BCE642152598D00B71C4C /* FormedUISegmentControl.m */,
+			);
+			path = UIControls;
+			sourceTree = "<group>";
+		};
 		28DBE8CE214CCBD800EB97DD /* FormedTests */ = {
 			isa = PBXGroup;
 			children = (
@@ -151,6 +164,7 @@
 		28DBE8E7214CDD2800EB97DD /* TableCells */ = {
 			isa = PBXGroup;
 			children = (
+				286BCE622152597A00B71C4C /* UIControls */,
 				28DBE8F3214CEB7E00EB97DD /* SegmentedControlCell */,
 				28DBE8F0214CE4F300EB97DD /* TextFieldCell */,
 				28DBE8ED214CDFF400EB97DD /* StepperCell */,
@@ -282,6 +296,7 @@
 				28DE99FE2147D09F00C6C9BD /* FormTextField.h in Headers */,
 				28EF3251214A7CAD0089BB1C /* FormStepperCell.h in Headers */,
 				28DE99FA2147D05400C6C9BD /* FormSection.h in Headers */,
+				286BCE652152598D00B71C4C /* FormedUISegmentControl.h in Headers */,
 				28DBE8FE214CEDC800EB97DD /* FormGroup.h in Headers */,
 				28DBE8FA214CED1A00EB97DD /* FormSegmentedControl.h in Headers */,
 			);
@@ -410,6 +425,7 @@
 				28DE9A042147D11A00C6C9BD /* FormStepper.m in Sources */,
 				28EF324C214A7CAD0089BB1C /* FormTextFieldCell.m in Sources */,
 				28EF324D214A7CAD0089BB1C /* FormStepperCell.m in Sources */,
+				286BCE662152598D00B71C4C /* FormedUISegmentControl.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};

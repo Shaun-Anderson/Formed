@@ -7,6 +7,7 @@
 //
 
 #import <UIKit/UIKit.h>
+#import "FormedUISegmentControl.h"
 
 @protocol FormSegmentDelegate
 @required
@@ -16,7 +17,7 @@
 @end
 
 @interface FormSegmentedControlCell : UITableViewCell
-@property (weak, nonatomic) IBOutlet FormedSegmentedControl *segmentedControl;
+@property (weak, nonatomic) IBOutlet FormedUISegmentControl *segmentedControl;
 @property (weak) id <FormSegmentDelegate> delegate;
 @property int formID;
 - (void)setSegments:(NSArray *)segments;

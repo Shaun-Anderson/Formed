@@ -65,7 +65,7 @@ NSMutableArray<FormInput *> *activeElements;
             FormSegmentedControl *segmentData = (FormSegmentedControl *) activeElements[indexPath.row];
             [cell setSegments:segmentData.segmentGroups];
             cell.delegate = self;
-            cell.formID = indexPath.row;
+            cell.segmentedControl.formID = indexPath.row;
             cell.segmentedControl.selectedSegmentIndex = *(segmentData.selectedSegment);
             return cell;
         }
