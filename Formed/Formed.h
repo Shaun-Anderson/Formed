@@ -16,5 +16,4 @@ FOUNDATION_EXPORT const unsigned char FormedVersionString[];
 
 // In this header, you should import all the public headers of your framework using statements like #import <Formed/PublicHeader.h>
 #import <Formed/Form.h>
-#import <Formed/FormSection.h>
 #import <Formed/FormInput.h>

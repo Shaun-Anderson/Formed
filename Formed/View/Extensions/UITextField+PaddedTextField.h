@@ -13,6 +13,7 @@
 @property (nonatomic) IBInspectable CGFloat bottomPadding;
 @property (nonatomic) IBInspectable CGFloat leftPadding;
 @property (nonatomic) IBInspectable CGFloat rightPadding;
+@property (nonatomic, assign) NSInteger formID;
 -(CGRect)textRectForBounds:(CGRect)bounds;
 -(CGRect)editingRectForBounds:(CGRect)bounds;
 -(CGRect)placeholderRectForBounds:(CGRect)bounds;

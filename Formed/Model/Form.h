@@ -7,15 +7,14 @@
 //
 
 #import <Foundation/Foundation.h>
-#import "FormSection.h"
 #import "FormSegmentedControl.h"
 
 @interface Form : NSObject
 @property NSMutableArray<FormInput *> *sections;
-- (void)addSection:(NSString*)sectionName;
 - (void)addTextField:(NSString*)name;
 - (void)addStepper:(NSString *)name;
 - (void)addSwitch:(NSString *)name;
+- (void)addHeader:(NSString *)name;
 -(FormSegmentedControl *)addSegmentedControl;
 - (NSString*)getValue:(NSString *)inputFieldName;
 @end

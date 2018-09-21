@@ -12,7 +12,7 @@
 #import "FormTextFieldCell.h"
 #import "FormSegmentedControlCell.h"
 
-@interface FormedTableViewController : UIViewController<UITableViewDataSource, UITableViewDelegate, FormSegmentDelegate>
+@interface FormedTableViewController : UIViewController<UITableViewDataSource, UITableViewDelegate, FormSegmentDelegate, FormTextFieldDelegate>
 @property Form* form;
 @property UITableView* tableView;
 - (void)getActiveElements;

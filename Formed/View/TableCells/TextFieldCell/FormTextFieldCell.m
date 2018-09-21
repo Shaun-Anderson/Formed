@@ -12,18 +12,20 @@
 
 - (void)awakeFromNib {
     [super awakeFromNib];
-    // Initialization code
+    [self.inputTextField addTarget:self action:@selector(valueChanged:) forControlEvents:UIControlEventEditingChanged];
 }
 
 - (void)setSelected:(BOOL)selected animated:(BOOL)animated {
     [super setSelected:selected animated:animated];
-
-    // Configure the view for the selected state
 }
 
 - (void)prepareForReuse {
     [super prepareForReuse];
     _inputTextField.text = @"";
+}
+
+-(void)valueChanged:(UITextField *)textField {
+    [self.delegate inputChanged:_formID textField:textField];
 }
 
 @end

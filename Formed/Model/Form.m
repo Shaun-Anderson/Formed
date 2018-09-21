@@ -11,6 +11,7 @@
 #import "Input Types/FormStepper.h"
 #import "Input Types/FormSwitch.h"
 #import "Input Types/FormSegmentedControl.h"
+#import "FormHeader.h"
 
 @implementation Form
 - (instancetype)init {
@@ -50,25 +51,24 @@
 //    return returnValue;
 //}
 
--(void)addSection:(NSString *)sectionName {
-    FormSection *newSection = [[FormSection alloc] init];
-    newSection.sectionName = sectionName;
-    [_sections addObject:newSection];
-}
-
 - (void)addTextField:(NSString *)name {
-    FormSection *section = [_sections objectAtIndex:_sections.count-1];
-    [section addTextField:name];
+    FormTextField *newTextField = [[FormTextField alloc] init];
+    newTextField.inputName = name;
+    [_sections addObject:newTextField];
 }
 
 - (void)addStepper:(NSString *)name {
-    FormSection *section = [_sections objectAtIndex:_sections.count-1];
-    [section addStepper:name];
+    FormStepper *newStepper = [[FormStepper alloc] init];
+    newStepper.typeFlag = Stepper;
+    newStepper.inputName = name;
+    [_sections addObject:newStepper];
 }
 
 -(void)addSwitch:(NSString *)name {
-    FormSection *section = [_sections objectAtIndex:_sections.count-1];
-    [section addSwitch:name isOn:false];
+    FormSwitch *newSwitch = [[FormSwitch alloc] init];
+    newSwitch.typeFlag = Switch;
+    newSwitch.inputName = name;
+    [_sections addObject:newSwitch];
 }
 
 -(FormSegmentedControl *)addSegmentedControl {
@@ -77,6 +77,13 @@
     newSegmentedControl.selectedSegment = 0;
     [_sections addObject:newSegmentedControl];
     return newSegmentedControl;
+}
+
+- (void)addHeader:(NSString *)name {
+    FormHeader *newHeader = [[FormHeader alloc] init];
+    newHeader.typeFlag = Header;
+    newHeader.inputName = name;
+    [_sections addObject:newHeader];
 }
 
 @end

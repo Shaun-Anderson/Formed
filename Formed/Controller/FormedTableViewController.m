@@ -43,6 +43,8 @@ NSMutableArray<FormInput *> *activeElements;
             }
             
             cell.titleLabel.text = elementData.inputName;
+            cell.formID = indexPath.row;
+            cell.delegate = self;
             cell.inputTextField.text = elementData.input;
             return cell;
         }
@@ -123,5 +125,12 @@ NSMutableArray<FormInput *> *activeElements;
     //NSLog(@"%lu", (unsigned long)activeElements.count);
     [self.tableView reloadData];
 }
+
+-(void)inputChanged:(NSInteger)formID textField:(UITextField *)textField {
+    NSLog(@"textchanged");
+    FormTextField *elementData = (FormTextField *) activeElements[formID];
+    elementData.input = textField.text;
+}
+
 
 @end
