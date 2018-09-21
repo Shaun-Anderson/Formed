@@ -7,6 +7,7 @@
 //
 
 #import "FormedTableViewController.h"
+#import <Formed/FormTextField.h>
 
 @interface FormedTableViewController ()
 @end
@@ -16,6 +17,7 @@
 NSMutableArray<FormInput *> *activeElements;
 
 - (void)viewDidLoad {
+    self.tableView.alwaysBounceVertical = false;
     self.tableView.delegate = self;
     self.tableView.dataSource = self;
 }
@@ -34,12 +36,14 @@ NSMutableArray<FormInput *> *activeElements;
         case Text:
         {
             FormTextFieldCell *cell = [tableView dequeueReusableCellWithIdentifier:textFieldCellIdentifier];
-            
+            FormTextField *elementData = (FormTextField *) activeElements[indexPath.row];
+
             if (cell == nil) {
                 cell = [[FormTextFieldCell alloc] initWithStyle:UITableViewCellStyleDefault reuseIdentifier:textFieldCellIdentifier];
             }
             
-            cell.titleLabel.text = activeElements[indexPath.row].inputName;
+            cell.titleLabel.text = elementData.inputName;
+            cell.inputTextField.text = elementData.input;
             return cell;
         }
             
@@ -65,8 +69,6 @@ NSMutableArray<FormInput *> *activeElements;
             FormSegmentedControl *segmentData = (FormSegmentedControl *) activeElements[indexPath.row];
             [cell setSegments:segmentData.segmentGroups];
             cell.delegate = self;
-            segmentData.selectedSegment = 1;
-            NSInteger newInt = 1;
             cell.segmentedControl.selectedSegmentIndex = segmentData.selectedSegment;
             return cell;
         }
@@ -100,7 +102,7 @@ NSMutableArray<FormInput *> *activeElements;
 
 
 - (NSInteger)tableView:(UITableView *)tableView numberOfRowsInSection:(NSInteger)section {
-    
+    NSLog(@"%lu", (unsigned long)activeElements.count);
     return activeElements.count;
 }
 
@@ -118,7 +120,8 @@ NSMutableArray<FormInput *> *activeElements;
 
 - (void)refresh {
     [self getActiveElements];
-    [_tableView reloadData];
+    //NSLog(@"%lu", (unsigned long)activeElements.count);
+    [self.tableView reloadData];
 }
 
 @end
