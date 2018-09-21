@@ -16,21 +16,25 @@
 // Private properties
 NSMutableArray<FormInput *> *activeElements;
 
+NSString *textFieldCellIdentifier = @"formTextFieldCell";
+NSString *stepperCellIdentifier = @"formStepperCell";
+NSString *segmentedCellIdentifier = @"FormSegmentedControlCell";
+NSString *headerCellIdentifier = @"formHeaderCell";
+
 - (void)viewDidLoad {
+    
+    NSBundle* bundle = [NSBundle bundleWithURL:[NSBundle.mainBundle URLForResource:@"Formed" withExtension:@"bundle"]];
+    [self.tableView registerNib:[UINib nibWithNibName:@"FormStepperCell" bundle:bundle] forCellReuseIdentifier:stepperCellIdentifier];
+    [self.tableView registerNib:[UINib nibWithNibName:@"FormTextFieldCell" bundle:bundle] forCellReuseIdentifier:textFieldCellIdentifier];
+    [self.tableView registerNib:[UINib nibWithNibName:@"FormSegmentedControlCell" bundle:bundle] forCellReuseIdentifier:segmentedCellIdentifier];
+    [self.tableView registerNib:[UINib nibWithNibName:@"HeaderTableViewCell" bundle:bundle] forCellReuseIdentifier:headerCellIdentifier];
+
     self.tableView.alwaysBounceVertical = false;
     self.tableView.delegate = self;
     self.tableView.dataSource = self;
 }
 - (UITableViewCell *)tableView:(UITableView *)tableView cellForRowAtIndexPath:(NSIndexPath *)indexPath
 {
-    NSString *textFieldCellIdentifier = @"formTextFieldCell";
-    NSString *stepperCellIdentifier = @"formStepperCell";
-    NSString *segmentedCellIdentifier = @"FormSegmentedControlCell";
-    
-    NSBundle* bundle = [NSBundle bundleWithURL:[NSBundle.mainBundle URLForResource:@"Formed" withExtension:@"bundle"]];
-    [tableView registerNib:[UINib nibWithNibName:@"FormStepperCell" bundle:bundle] forCellReuseIdentifier:stepperCellIdentifier];
-    [tableView registerNib:[UINib nibWithNibName:@"FormTextFieldCell" bundle:bundle] forCellReuseIdentifier:textFieldCellIdentifier];
-    [tableView registerNib:[UINib nibWithNibName:@"FormSegmentedControlCell" bundle:bundle] forCellReuseIdentifier:segmentedCellIdentifier];
 
     switch (activeElements[indexPath.row].typeFlag) {
         case Text:
