@@ -8,6 +8,8 @@
 
 #import "FormedTableViewController.h"
 #import <Formed/FormTextField.h>
+#import <Formed/FormSwitchCell.h>
+#import <Formed/FormSwitch.h>
 
 @interface FormedTableViewController ()
 @end
@@ -20,11 +22,13 @@ NSString *textFieldCellIdentifier = @"formTextFieldCell";
 NSString *stepperCellIdentifier = @"formStepperCell";
 NSString *segmentedCellIdentifier = @"FormSegmentedControlCell";
 NSString *headerCellIdentifier = @"formHeaderCell";
+NSString *switchCellIdentifier = @"formSwitchCell";
 
 - (void)viewDidLoad {
     
     NSBundle* bundle = [NSBundle bundleWithURL:[NSBundle.mainBundle URLForResource:@"Formed" withExtension:@"bundle"]];
     [self.tableView registerNib:[UINib nibWithNibName:@"FormStepperCell" bundle:bundle] forCellReuseIdentifier:stepperCellIdentifier];
+    [self.tableView registerNib:[UINib nibWithNibName:@"FormSwitchCell" bundle:bundle] forCellReuseIdentifier:switchCellIdentifier];
     [self.tableView registerNib:[UINib nibWithNibName:@"FormTextFieldCell" bundle:bundle] forCellReuseIdentifier:textFieldCellIdentifier];
     [self.tableView registerNib:[UINib nibWithNibName:@"FormSegmentedControlCell" bundle:bundle] forCellReuseIdentifier:segmentedCellIdentifier];
     [self.tableView registerNib:[UINib nibWithNibName:@"HeaderTableViewCell" bundle:bundle] forCellReuseIdentifier:headerCellIdentifier];
@@ -76,6 +80,18 @@ NSString *headerCellIdentifier = @"formHeaderCell";
             [cell setSegments:segmentData.segmentGroups];
             cell.delegate = self;
             cell.segmentedControl.selectedSegmentIndex = segmentData.selectedSegment;
+            return cell;
+        }
+            
+        case Switch:
+        {
+            FormSwitchCell *cell = [tableView dequeueReusableCellWithIdentifier:switchCellIdentifier];
+            if (cell == nil) {
+                cell = [[FormSwitchCell alloc] initWithStyle:UITableViewCellStyleDefault reuseIdentifier:switchCellIdentifier];
+            }
+            
+            FormSwitch *segmentData = (FormSwitch *) activeElements[indexPath.row];
+            cell.titleLabel.text = activeElements[indexPath.row].inputName;
             return cell;
         }
             
