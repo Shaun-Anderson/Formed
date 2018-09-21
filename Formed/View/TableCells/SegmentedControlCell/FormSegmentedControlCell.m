@@ -29,13 +29,6 @@
 
     // Configure the view for the selected state
 }
-- (IBAction)segmentControlChanged:(FormedUISegmentControl *)sender {
-    NSLog(@"%ld", (long)sender.formID);
-    
-    
-    [_delegate segmentChanged:(long *)sender.formID selectedIndex:sender.selectedSegmentIndex];
-}
-
 - (void)setSegments:(NSArray *)segments
 {
     [_segmentedControl removeAllSegments];
@@ -44,5 +37,11 @@
         [_segmentedControl insertSegmentWithTitle:segment.groupName atIndex:_segmentedControl.numberOfSegments animated:NO];
     }
 }
+
+- (IBAction)segmentControlChanged:(FormedUISegmentControl *)sender {
+    FormedUISegmentControl *segControl = (FormedUISegmentControl *) sender;
+    [_delegate segmentChanged:segControl.formID selectedIndex:segControl.selectedSegmentIndex];
+}
+
 
 @end

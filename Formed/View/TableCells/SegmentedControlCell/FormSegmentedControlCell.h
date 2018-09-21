@@ -11,7 +11,7 @@
 
 @protocol FormSegmentDelegate
 @required
-- (void)segmentChanged:(long*)segmentFormID selectedIndex:(NSInteger*)selectedIndex;
+- (void)segmentChanged:(NSInteger)segmentFormID selectedIndex:(NSInteger)selectedIndex;
 @optional
 // list of optional methods
 @end

@@ -9,7 +9,14 @@
 #import "FormedUISegmentControl.h"
 
 @implementation FormedUISegmentControl
-
+- (instancetype)init
+{
+    self = [super init];
+    if (self) {
+        self.formID = 0;
+    }
+    return self;
+}
 /*
  // Only override drawRect: if you pe(nonatomic) rform custom drawing.
 // An empty implementation adversely affects performance during animation.

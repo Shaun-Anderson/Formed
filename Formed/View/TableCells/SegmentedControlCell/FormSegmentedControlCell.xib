@@ -11,7 +11,7 @@
     <objects>
         <placeholder placeholderIdentifier="IBFilesOwner" id="-1" userLabel="File's Owner"/>
         <placeholder placeholderIdentifier="IBFirstResponder" id="-2" customClass="UIResponder"/>
-        <tableViewCell clipsSubviews="YES" contentMode="scaleToFill" preservesSuperviewLayoutMargins="YES" selectionStyle="none" indentationWidth="0.0" reuseIdentifier="FormSegmentedControlCell" id="Jdk-Fl-Hk5" userLabel="formTextField" customClass="FormSegmentedControlCell">
+        <tableViewCell clipsSubviews="YES" contentMode="scaleToFill" preservesSuperviewLayoutMargins="YES" selectionStyle="none" indentationWidth="0.0" reuseIdentifier="FormSegmentedControlCell" id="Jdk-Fl-Hk5" userLabel="formSegmentControl" customClass="FormSegmentedControlCell">
             <rect key="frame" x="0.0" y="0.0" width="375" height="44"/>
             <autoresizingMask key="autoresizingMask"/>
             <tableViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" preservesSuperviewLayoutMargins="YES" insetsLayoutMarginsFromSafeArea="NO" tableViewCell="Jdk-Fl-Hk5" id="BYf-rO-VHj">
@@ -27,13 +27,13 @@
                         </segments>
                         <color key="tintColor" cocoaTouchSystemColor="darkTextColor"/>
                         <connections>
-                            <action selector="segmentControlChanged:" destination="Jdk-Fl-Hk5" eventType="valueChanged" id="Abm-Jk-ukc"/>
+                            <action selector="segmentControlChanged:" destination="Jdk-Fl-Hk5" eventType="valueChanged" id="1wF-ls-Hex"/>
                         </connections>
                     </segmentedControl>
                 </subviews>
             </tableViewCellContentView>
             <connections>
-                <outlet property="segmentedControl" destination="PqH-Ye-dic" id="2TC-3B-rer"/>
+                <outlet property="segmentedControl" destination="PqH-Ye-dic" id="7lW-6l-DdN"/>
             </connections>
             <point key="canvasLocation" x="33.5" y="54"/>
         </tableViewCell>
