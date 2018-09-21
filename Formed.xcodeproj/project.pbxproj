@@ -45,6 +45,8 @@
 		28F71CC22154C23E0093D7A9 /* FormHeaderCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = 28F71CC12154C23E0093D7A9 /* FormHeaderCell.xib */; };
 		28F71CC52154C2DE0093D7A9 /* HeaderTableViewCell.h in Headers */ = {isa = PBXBuildFile; fileRef = 28F71CC32154C2DE0093D7A9 /* HeaderTableViewCell.h */; };
 		28F71CC62154C2DE0093D7A9 /* HeaderTableViewCell.m in Sources */ = {isa = PBXBuildFile; fileRef = 28F71CC42154C2DE0093D7A9 /* HeaderTableViewCell.m */; };
+		28F71CC92154C78F0093D7A9 /* FormHeader.h in Headers */ = {isa = PBXBuildFile; fileRef = 28F71CC72154C78F0093D7A9 /* FormHeader.h */; };
+		28F71CCA2154C78F0093D7A9 /* FormHeader.m in Sources */ = {isa = PBXBuildFile; fileRef = 28F71CC82154C78F0093D7A9 /* FormHeader.m */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -99,6 +101,8 @@
 		28F71CC12154C23E0093D7A9 /* FormHeaderCell.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = FormHeaderCell.xib; sourceTree = "<group>"; };
 		28F71CC32154C2DE0093D7A9 /* HeaderTableViewCell.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = HeaderTableViewCell.h; sourceTree = "<group>"; };
 		28F71CC42154C2DE0093D7A9 /* HeaderTableViewCell.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = HeaderTableViewCell.m; sourceTree = "<group>"; };
+		28F71CC72154C78F0093D7A9 /* FormHeader.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = FormHeader.h; sourceTree = "<group>"; };
+		28F71CC82154C78F0093D7A9 /* FormHeader.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = FormHeader.m; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -148,6 +152,8 @@
 				28DE9A002147D0A800C6C9BD /* Input Types */,
 				28DBE8FC214CEDC800EB97DD /* FormGroup.h */,
 				28DBE8FD214CEDC800EB97DD /* FormGroup.m */,
+				28F71CC72154C78F0093D7A9 /* FormHeader.h */,
+				28F71CC82154C78F0093D7A9 /* FormHeader.m */,
 			);
 			path = Model;
 			sourceTree = "<group>";
@@ -297,6 +303,7 @@
 				28DBE8EB214CDFA800EB97DD /* FormSwitch.h in Headers */,
 				28DBE8F6214CEBB600EB97DD /* FormSegmentedControlCell.h in Headers */,
 				28EF3250214A7CAD0089BB1C /* FormTextFieldCell.h in Headers */,
+				28F71CC92154C78F0093D7A9 /* FormHeader.h in Headers */,
 				28EF324E214A7CAD0089BB1C /* UITextField+PaddedTextField.h in Headers */,
 				28DE99EE2147CD7700C6C9BD /* FormedTableViewController.h in Headers */,
 				28DE99F62147CFDD00C6C9BD /* FormInput.h in Headers */,
@@ -427,6 +434,7 @@
 				28DE99FF2147D09F00C6C9BD /* FormTextField.m in Sources */,
 				28DBE8E6214CDCE400EB97DD /* FormSwitchCell.m in Sources */,
 				28DE99F72147CFDD00C6C9BD /* FormInput.m in Sources */,
+				28F71CCA2154C78F0093D7A9 /* FormHeader.m in Sources */,
 				28DBE8FF214CEDC800EB97DD /* FormGroup.m in Sources */,
 				28DBE8EC214CDFA800EB97DD /* FormSwitch.m in Sources */,
 				28DBE8F7214CEBB600EB97DD /* FormSegmentedControlCell.m in Sources */,
