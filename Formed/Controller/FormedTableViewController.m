@@ -10,6 +10,8 @@
 #import <Formed/FormTextField.h>
 #import <Formed/FormSwitchCell.h>
 #import <Formed/FormSwitch.h>
+#import <Formed/FormHeader.h>
+#import <HeaderTableViewCell.h>
 
 @interface FormedTableViewController ()
 @end
@@ -26,17 +28,20 @@ NSString *switchCellIdentifier = @"formSwitchCell";
 
 - (void)viewDidLoad {
     
+    // Setup Nibs
     NSBundle* bundle = [NSBundle bundleWithURL:[NSBundle.mainBundle URLForResource:@"Formed" withExtension:@"bundle"]];
     [self.tableView registerNib:[UINib nibWithNibName:@"FormStepperCell" bundle:bundle] forCellReuseIdentifier:stepperCellIdentifier];
     [self.tableView registerNib:[UINib nibWithNibName:@"FormSwitchCell" bundle:bundle] forCellReuseIdentifier:switchCellIdentifier];
     [self.tableView registerNib:[UINib nibWithNibName:@"FormTextFieldCell" bundle:bundle] forCellReuseIdentifier:textFieldCellIdentifier];
     [self.tableView registerNib:[UINib nibWithNibName:@"FormSegmentedControlCell" bundle:bundle] forCellReuseIdentifier:segmentedCellIdentifier];
-    [self.tableView registerNib:[UINib nibWithNibName:@"HeaderTableViewCell" bundle:bundle] forCellReuseIdentifier:headerCellIdentifier];
-
+    [self.tableView registerNib:[UINib nibWithNibName:@"FormHeaderCell" bundle:bundle] forCellReuseIdentifier:headerCellIdentifier];
+    
+    // Set basic options for table.
     self.tableView.alwaysBounceVertical = false;
     self.tableView.delegate = self;
     self.tableView.dataSource = self;
 }
+
 - (UITableViewCell *)tableView:(UITableView *)tableView cellForRowAtIndexPath:(NSIndexPath *)indexPath
 {
 
@@ -91,6 +96,16 @@ NSString *switchCellIdentifier = @"formSwitchCell";
             }
             
             FormSwitch *segmentData = (FormSwitch *) activeElements[indexPath.row];
+            cell.titleLabel.text = activeElements[indexPath.row].inputName;
+            return cell;
+        }
+            
+        case Header:
+        {
+            HeaderTableViewCell *cell = [tableView dequeueReusableCellWithIdentifier:headerCellIdentifier];
+            if (cell == nil) {
+                cell = [[HeaderTableViewCell alloc] initWithStyle:UITableViewCellStyleDefault reuseIdentifier:headerCellIdentifier];
+            }
             cell.titleLabel.text = activeElements[indexPath.row].inputName;
             return cell;
         }
