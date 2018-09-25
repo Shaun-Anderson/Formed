@@ -1,5 +1,7 @@
 # Formed
 
+![CacoaPods](https://img.shields.io/cocoapods/v/Formed.svg)
+
 This is an expansive framework for easily adding form elements to an application.
 
 ##### Table of Contents  
