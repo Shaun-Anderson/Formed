@@ -9,15 +9,17 @@ This is an expansive framework for easily adding form elements to an application
 
 
 ## Installation
+
 ### CocoaPods
 [CocoaPods](https://cocoapods.org) is a dependency manager for Cocoa projects. You can install it with the following command:
 
 ```
-    pod 'Alamofire', '~> 4.7'
+    pod 'Formed'
 ```
 
 ## Features
 
-- [x] Chainable Request / Response Methods
-- [x] URL / JSON / plist Parameter Encoding
-- [x] Upload File / Data / Stream / MultipartFormData
+- [x] TextField
+- [x] SegmentedControl
+- [x] Stepper
+- [x] Switch
