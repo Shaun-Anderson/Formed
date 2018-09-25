@@ -27,6 +27,7 @@
                     </label>
                 </subviews>
             </tableViewCellContentView>
+            <color key="backgroundColor" red="0.75406885150000003" green="0.75408679249999999" blue="0.75407713649999997" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
             <connections>
                 <outlet property="titleLabel" destination="7Je-cS-KGH" id="G5g-Bq-Je6"/>
             </connections>
