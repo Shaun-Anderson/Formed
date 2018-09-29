@@ -15,7 +15,6 @@
 {
     self = [super init];
     if (self) {
-        self.formID = 0;
     }
     return self;
 }
@@ -40,7 +39,7 @@
 
 - (IBAction)segmentControlChanged:(FormedUISegmentControl *)sender {
     FormedUISegmentControl *segControl = (FormedUISegmentControl *) sender;
-    [_delegate segmentChanged:segControl.formID selectedIndex:segControl.selectedSegmentIndex];
+    [_delegate segmentChanged:_formID selectedIndex:segControl.selectedSegmentIndex];
 }
 
 

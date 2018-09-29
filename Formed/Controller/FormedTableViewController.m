@@ -55,7 +55,7 @@ NSString *switchCellIdentifier = @"formSwitchCell";
 
 - (void)getActiveElements {
     activeElements = [[NSMutableArray alloc] init];
-    
+
     // Iterate through the form and retrieve all items that need to be displayed.
     for (int i = 0; i < _form.sections.count; i++) {
         [activeElements addObject:_form.sections[i]];
@@ -173,13 +173,12 @@ NSString *switchCellIdentifier = @"formSwitchCell";
 
 - (void)segmentChanged:(NSInteger *)segmentFormID selectedIndex:(NSInteger *)selectedIndex {
     NSLog(@"This segmment has been changed.");
-    FormSegmentedControl *segmentedControl = (FormSegmentedControl *) _form.sections[(long)segmentFormID];
+    FormSegmentedControl *segmentedControl = (FormSegmentedControl *) activeElements[(long)segmentFormID];
     segmentedControl.selectedSegment = selectedIndex;
     [self refresh];
 }
 
 -(void)inputChanged:(NSInteger)formID textField:(UITextField *)textField {
-    NSLog(@"%@", formID);
     FormTextField *elementData = (FormTextField *) activeElements[formID];
     elementData.input = textField.text;
 }
