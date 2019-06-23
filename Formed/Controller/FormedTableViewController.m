@@ -12,6 +12,7 @@
 #import <Formed/FormSwitch.h>
 #import <Formed/FormHeader.h>
 #import <HeaderTableViewCell.h>
+#import <Formed/FormPicker.h>
 
 @interface FormedTableViewController ()
 @end
@@ -28,6 +29,8 @@ NSString *stepperCellIdentifier = @"formStepperCell";
 NSString *segmentedCellIdentifier = @"FormSegmentedControlCell";
 NSString *headerCellIdentifier = @"formHeaderCell";
 NSString *switchCellIdentifier = @"formSwitchCell";
+
+NSObject *activeObject;
 
 
 #pragma mark - FormedTableViewController
@@ -222,6 +225,22 @@ NSString *switchCellIdentifier = @"formSwitchCell";
     UIEdgeInsets contentInsets = UIEdgeInsetsZero;
     _tableView.contentInset = contentInsets;
     _tableView.scrollIndicatorInsets = contentInsets;
+}
+
+#pragma mark - UIPicker DataSource
+
+-(NSInteger)pickerView:(UIPickerView *)pickerView numberOfRowsInComponent:(NSInteger)component
+{
+    return 0;
+}
+
+-(NSInteger)numberOfComponentsInPickerView:(UIPickerView *)pickerView {
+    return 0;
+}
+
+#pragma mark - UIPicker Delegate
+-(NSString *)pickerView:(UIPickerView *)pickerView titleForRow:(NSInteger)row forComponent:(NSInteger)component {
+    return 0;
 }
 
 @end
